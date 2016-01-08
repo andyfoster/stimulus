@@ -1,28 +1,46 @@
-var newIdea = function(l, n, o, t, s) {
+(function($, e, p) {
 
-  // Variables
-  l = ["Navigation menu", "Product Card", "Checkout", "Sing in", "Log in", "Calculator", "Calendar", "Weight Tracker", "Drop Down", "Profile card", "Countdown", "Music Player", "Timeline", "Notification", "Keyboard", "Share", "Account settings", "Pricing table", "Event card", "Subscribe notification", "Map", "Contact Form", "Boarding Pass", "Video player", "Slider", "Product costumization", "Language switcher", "Reminder", "Clock", "Form validation", "Product Review", "Movie Review", "Related posts", "Emoji keyboard", "Tweet button", "Settings", "Banner", "Testimonial"];
-  n = Math.floor(Math.random() * l.length);
-  o = l[n];
-  t = 300;
+  // Variables & Functions
+  $ = function(e) {
+    return document.querySelector(e);
+  };
   e = $("#output h1");
 
-  // For the first time
-  if (e.hasClass("pre")) {
-    setTimeout(function(){
-      e.removeClass("pre");
-      e.addClass("aft");
-    }, t);
-  }
+  // New Ideas
+  newIdea = function(l) {
 
-  // Every time
-  e.addClass("hidden");
-  setTimeout(function(){
-    e.html(o);
-    e.removeClass("hidden");
-  }, t);
-};
+    // Variables
+    l = ["Navigation menu","Product Card","Checkout","Sing in","Log in","Calculator","Calendar","Weight Tracker","Drop Down","Profile card","Countdown","Music Player","Timeline","Notification","Keyboard","Share","Account settings","Pricing table","Event card","Subscribe notification","Map","Contact Form","Boarding Pass","Video player","Slider","Product costumization","Language switcher","Reminder","Clock","Form validation","Product Review","Movie Review","Related posts","Emoji keyboard","Tweet button","Settings","Banner","Testimonial"];
 
-$(window).keyup(function(e) {
-  if (e.keyCode === 0 || e.keyCode === 32) newIdea();
-}).click(newIdea);
+
+    // Generate new content
+    e.className += " hidden";
+    setTimeout(function() {
+      e.innerHTML = l[Math.floor(Math.random() * l.length)];
+      e.className = "aft xxl";
+    }, 300);
+
+  };
+
+  // "Tap" for Touchscreens
+  if ("ontouchstart" in window) {
+    $("html").onclick = function() {
+      newIdea();
+    };
+    p = "touch";
+  };
+
+  // "Spacebar" for keyboards
+  $("body").onkeyup = function(e) {
+    if (e.keyCode == 0 || e.keyCode == 32) newIdea();
+  };
+
+  // In the placeholder, it descrives
+  // the action you have to do
+  if (p == "touch") {
+    e.innerHTML = "Tap anywhere";
+  } else {
+    e.innerHTML = "Press Spacebar";
+  };
+
+})();

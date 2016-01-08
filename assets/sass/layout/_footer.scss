@@ -1,0 +1,7 @@
+footer a:not(:last-child),
+footer span {
+  margin-right: 15px;
+}
+footer a:hover {
+  color: $color-black;
+}

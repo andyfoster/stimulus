@@ -1,0 +1,35 @@
+/* --- Base --- */
+
+@media (max-width: 950px) {
+  body {
+    font-size: $base-m-size;
+  }
+}
+@media (max-width: 750px) {
+  body {
+    font-size: $base-s-size;
+  }
+  .xxl {
+    font-size: 3.7em;
+  }
+}
+@media (max-width: 650px) {
+  html {
+    overflow-y: auto;
+  }
+  body {
+    padding: $base-xs-padding;
+  }
+  .xxl {
+    font-size: 2.8em;
+  }
+  .about {
+    width: $about-xs-width;
+  }
+  .xm {
+    font-size: 1.1em;
+  }
+  footer {
+    text-align: center;
+  }
+}

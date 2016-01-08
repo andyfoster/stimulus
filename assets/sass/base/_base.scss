@@ -1,0 +1,36 @@
+/* --- All elements --- */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* --- HTML & Body --- */
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  cursor: default;
+}
+body {
+  font-family: $base-sans;
+  font-size: $base-size;
+  display: flex;
+  flex-direction: column;
+  padding: $base-padding;
+  text-rendering: optimizeLegibility;
+}
+
+/* --- Links --- */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* --- Motion --- */
+a, .hidden {
+  transition: all $time $easing;
+}
+.hidden {
+  opacity: 0;
+}

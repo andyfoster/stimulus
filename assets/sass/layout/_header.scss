@@ -1,0 +1,10 @@
+header {
+  display: flex;
+  justify-content: space-between;
+}
+.brand {
+  user-select: none;
+}
+.twitter:hover {
+  color: $color-silver;
+}

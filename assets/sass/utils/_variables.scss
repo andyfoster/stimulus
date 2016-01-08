@@ -1,0 +1,26 @@
+/* --- Colors --- */
+$color-black:   #1E1E22;
+$color-gray:    #717685;
+$color-silver:  #A5AEB8;
+$color-white:   #FCFCFC;
+$color-twitter: #55ACEE;
+
+/* --- Motion --- */
+$time:   300ms;
+$easing: cubic-bezier(0.3, 0.8, 0.6, 1);
+
+/* --- Base --- */
+$base-padding: 3em;
+$base-sans:    "Roboto", "Helvetica", "Arial", sans-serif;
+$base-size:    20px;
+
+$base-m-size:     18px;
+$base-s-size:     15px;
+$base-xs-padding: 2em;
+
+/* --- Content --- */
+$about-width: 31.5em;
+
+$about-author-margin: 1.5em 0;
+
+$about-xs-width: 85% !important;

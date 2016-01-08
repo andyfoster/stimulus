@@ -1,0 +1,20 @@
+/* --- General --- */
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+/* --- About --- */
+.about {
+  width: $about-width;
+  margin: 0 auto;
+}
+.author {
+  margin: $about-author-margin;
+  a:not(:last-child):after {
+    content: " \2014";
+  }
+}

@@ -1,0 +1,33 @@
+/* --- Text Color --- */
+.black   { color: $color-black; }
+.gray    { color: $color-gray; }
+.silver  { color: $color-silver; }
+.white   { color: $color-white; }
+.twitter { color: $color-twitter; }
+
+/* --- Background Color --- */
+.bg-black   { background: $color-black; }
+.bg-gray    { background: $color-gray; }
+.bg-silver  { background: $color-silver; }
+.bg-white   { background: $color-white; }
+.bg-twitter { background: $color-twitter; }
+
+/* --- Font Weight --- */
+.book   { font-weight: 400; }
+.semi   { font-weight: 500; }
+.bold   { font-weight: 600; }
+
+/* --- Font Size --- */
+.xxl { font-size: 4.5em; }
+.xl  { font-size: 2.5em; }
+.l   { font-size: 1.5em; }
+.xm  { font-size: 1.25em; }
+.m   { font-size: 1.1em; }
+.b   { font-size: 1em; }
+.s   { font-size: 0.9em; }
+.xs  { font-size: 0.5em; }
+
+/* --- Text Align --- */
+.left   { text-align: left; }
+.right  { text-align: right; }
+.center { text-align: center; }
